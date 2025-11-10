@@ -1,0 +1,133 @@
+/* Stile moderno e minimal per il visualizzatore */
+/* Font Inter (importato da index.html) */
+:root{
+  --panel-bg: rgba(20,24,28,0.6);
+  --panel-border: rgba(255,255,255,0.06);
+  --accent: #5bd6ff;
+  --glass: rgba(255,255,255,0.04);
+  --text: #e6eef6;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  height:100%;
+  margin:0;
+  background: linear-gradient(180deg, #0b0f13 0%, #071018 100%);
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Contenitore scena: occuperà tutta la finestra */
+#viewer{
+  width:100%;
+  height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Overlay per il pannello di controllo e titolo */
+#overlay{
+  position:absolute;
+  inset:0;
+  pointer-events:none; /* permette il pass-through al canvas, poi i pulsanti avranno pointer-events:auto */
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  padding:28px;
+  gap:20px;
+}
+
+/* Titolo e sottotitolo */
+#overlay h1{
+  margin:0 0 6px 0;
+  font-size:20px;
+  font-weight:600;
+  color:var(--text);
+  text-shadow:0 2px 12px rgba(0,0,0,0.6);
+}
+.subtitle{
+  margin:0 0 18px 0;
+  font-size:13px;
+  color:rgba(230,238,246,0.85);
+}
+
+/* Pannello dei controlli laterale */
+#controls{
+  pointer-events:auto;
+  background:var(--panel-bg);
+  border:1px solid var(--panel-border);
+  border-radius:12px;
+  padding:14px;
+  width:240px;
+  backdrop-filter: blur(8px) saturate(120%);
+  box-shadow: 0 8px 30px rgba(2,6,12,0.6);
+  color:var(--text);
+}
+
+/* Sezioni interne */
+#controls section{
+  margin-bottom:12px;
+}
+#controls h2{
+  margin:0 0 8px 0;
+  font-size:13px;
+  font-weight:600;
+  color:#dff6ff;
+}
+
+/* Pulsanti */
+.btn-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+#controls button{
+  appearance:none;
+  border:1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  color:var(--text);
+  padding:8px 10px;
+  border-radius:8px;
+  font-size:13px;
+  cursor:pointer;
+  transition:transform .14s ease, box-shadow .14s ease, background .14s;
+  pointer-events:auto;
+}
+#controls button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.45);
+}
+#controls button:active{ transform:translateY(-1px); }
+
+/* Pulsanti di colore con anteprima */
+#color-buttons button{
+  width:44px;
+  height:32px;
+  padding:0;
+  border-radius:6px;
+  border:2px solid rgba(255,255,255,0.06);
+}
+#color-buttons button[title="Bianco"]{ box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06); }
+
+/* Footer del pannello */
+#controls .footer{
+  margin-top:8px;
+  border-top:1px dashed rgba(255,255,255,0.03);
+  padding-top:8px;
+  font-size:11px;
+  color:rgba(230,238,246,0.7);
+}
+
+/* Responsività: su mobile il pannello diventa in basso */
+@media (max-width:720px){
+  #overlay{
+    align-items:flex-end;
+    justify-content:center;
+    padding:16px;
+  }
+  #controls{ width:calc(100% - 32px); }
+  #overlay h1{ display:none; }
+}
