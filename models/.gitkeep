@@ -1,0 +1,20 @@
+# Cartella per il modello 3D
+
+Inserisci qui il tuo file GLTF della Volkswagen Golf 7 GTD.
+
+Il file deve essere chiamato: **golf7.gltf**
+
+Se hai un file GLB, puoi rinominarlo in golf7.gltf oppure modificare il percorso nel file js/main.js alla riga:
+
+```javascript
+loader.load('models/golf7.gltf', ...
+```
+
+## Dove trovare modelli 3D di auto:
+
+- Sketchfab: https://sketchfab.com/
+- TurboSquid: https://www.turbosquid.com/
+- CGTrader: https://www.cgtrader.com/
+- Free3D: https://free3d.com/
+
+Assicurati che il modello sia in formato GLTF o GLB.

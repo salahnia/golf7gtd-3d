@@ -1,0 +1,292 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Manual GLTF Generator"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [0]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Car_Root",
+      "children": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    {
+      "name": "Body_Main",
+      "mesh": 0,
+      "translation": [0, 0.5, 0]
+    },
+    {
+      "name": "Wheel_Front_Left",
+      "mesh": 1,
+      "translation": [-0.7, 0.3, 1.2]
+    },
+    {
+      "name": "Wheel_Front_Right",
+      "mesh": 1,
+      "translation": [0.7, 0.3, 1.2]
+    },
+    {
+      "name": "Wheel_Rear_Left",
+      "mesh": 1,
+      "translation": [-0.7, 0.3, -1.2]
+    },
+    {
+      "name": "Wheel_Rear_Right",
+      "mesh": 1,
+      "translation": [0.7, 0.3, -1.2]
+    },
+    {
+      "name": "Door_Left",
+      "mesh": 2,
+      "translation": [-0.9, 0.6, 0]
+    },
+    {
+      "name": "Door_Right",
+      "mesh": 2,
+      "translation": [0.9, 0.6, 0]
+    },
+    {
+      "name": "Hood_Front",
+      "mesh": 3,
+      "translation": [0, 0.7, 1.5]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Body",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Wheel",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 3,
+            "NORMAL": 4
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "Door",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7
+          },
+          "indices": 8,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Hood",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10
+          },
+          "indices": 11,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "CarPaint",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [0.7, 0.0, 0.0, 1.0],
+        "metallicFactor": 0.6,
+        "roughnessFactor": 0.3
+      }
+    },
+    {
+      "name": "WheelMaterial",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [0.1, 0.1, 0.1, 1.0],
+        "metallicFactor": 0.8,
+        "roughnessFactor": 0.2
+      }
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [0.8, 0.6, 1.8],
+      "min": [-0.8, -0.1, -1.8]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [0.25, 0.25, 0.25],
+      "min": [-0.25, -0.25, -0.25]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3",
+      "max": [0.05, 0.5, 0.8],
+      "min": [-0.05, -0.5, -0.8]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3",
+      "max": [0.6, 0.05, 0.4],
+      "min": [-0.6, -0.05, -0.4]
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 288,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 648,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 936,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1224,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1296,
+      "byteLength": 96,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1392,
+      "byteLength": 96,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1488,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1560,
+      "byteLength": 96,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1656,
+      "byteLength": 96,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1752,
+      "byteLength": 72,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1824,
+      "uri": "data:application/octet-stream;base64,zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzL3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9zczMvczMzD3MzMy9AAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAEAAgADAAQABQAGAAcACAAJAAoACwAMAA0ADgAPABAAEQASABMAFAAVABYAFwAYABkAGgAbABwAHQAeAB8AIAAhACIAIwDNzEw+zczMPc3MTD7NzEw+zczMPc3MTD7NzEw+zczMvc3MTD7NzEw+zczMvc3MTD7NzMw9zczMPc3MTD7NzMw9zczMPc3MTD7NzMw9zczMvc3MTD7NzMw9zczMvc3MTD7NzEw+zczMPc3MzL3NzEw+zczMPc3MzL3NzEw+zczMvc3MzL3NzEw+zczMvc3MzL3NzMw9zczMPc3MzL3NzMw9zczMPc3MzL3NzMw9zczMvc3MzL3NzMw9zczMvc3MzL3NzEw+zczMvc3MTD7NzEw+zczMvc3MTD7NzEw+zczMPc3MTD7NzEw+zczMPc3MTD7NzMw9zczMvc3MTD7NzMw9zczMvc3MTD7NzMw9zczMPc3MTD7NzMw9zczMPc3MTD7NzEw+zczMvc3MzL3NzEw+zczMvc3MzL3NzEw+zczMPc3MzL3NzEw+zczMPc3MzL3NzMw9zczMvc3MzL3NzMw9zczMvc3MzL3NzMw9zczMPc3MzL3NzMw9zczMPc3MzL0AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAEAAgADAAQABQAGAAcACAAJAAoACwAMAA0ADgAPABAAEQASABMAFAAVABYAFwAYABkAGgAbABwAHQAeAB8AIAAhACIAIwCamRk9AAAAAAAA8D+amRk9AAAAAAAA8L+amRk9zczMvgAA8D+amRk9zczMvgAA8L+amZm9AAAAAAAA8D+amZm9AAAAAAAA8L+amZm9zczMvgAA8D+amZm9zczMvgAA8L8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAEAAgADAAQABQAGAAcACAAJAAoACwAMAA0ADgAPABAAEQASABMAFAAVABYAFwAYABkAGgAbABwAHQAeAB8AIAAhACIAIwAzMzM/zczMPZqZmT4zMzM/zczMPZqZmb4zMzM/zczMvZqZmT4zMzM/zczMvZqZmb4zM7O/zczMPZqZmT4zM7O/zczMPZqZmb4zM7O/zczMvZqZmT4zM7O/zczMvZqZmb4AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAEAAgADAAQABQAGAAcACAAJAAoACwAMAA0ADgAPABAAEQASABMAFAAVABYAFwAYABkAGgAbABwAHQAeAB8AIAAhACIAIwA="
+    }
+  ]
+}
