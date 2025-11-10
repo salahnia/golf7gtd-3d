@@ -1,0 +1,73 @@
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Volkswagen Golf 7 GTD - Visualizzatore 3D</title>
+
+  <!-- Google Font moderno -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stili del progetto -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Contenitore della scena -->
+  <div id="viewer">
+    <!-- Canvas WebGL verrà inserito dinamicamente dallo script -->
+    <div id="overlay">
+      <h1>Volkswagen Golf 7 GTD</h1>
+      <p class="subtitle">Ruota con il mouse, usa i controlli per personalizzare</p>
+      <!-- Pannello laterale con i controlli -->
+      <div id="controls">
+        <section>
+          <h2>Colore carrozzeria</h2>
+          <div class="btn-row" id="color-buttons">
+            <button data-color="#b30000" title="Rosso">Rosso</button>
+            <button data-color="#ffffff" title="Bianco">Bianco</button>
+            <button data-color="#0b0b0b" title="Nero">Nero</button>
+            <button data-color="#9b9b9b" title="Grigio">Grigio</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Cerchi</h2>
+          <div class="btn-row" id="rim-buttons">
+            <button data-rim="style1">Stile 1</button>
+            <button data-rim="style2">Stile 2</button>
+            <button data-rim="style3">Stile 3</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Portiere</h2>
+          <div class="btn-row">
+            <button id="toggle-doors">Apri/Chiudi porte</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Cofano</h2>
+          <div class="btn-row">
+            <button id="toggle-hood">Apri/Chiudi cofano</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Colori interni</h2>
+          <div class="btn-row" id="interior-buttons">
+            <button data-interior="black">Nero</button>
+            <button data-interior="light">Chiaro</button>
+            <button data-interior="beige">Beige</button>
+          </div>
+        </section>
+
+        <section class="footer">
+          <small>Modello: models/golf7.gltf</small>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- Script principale (module) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
