@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visualizzatore 3D interattivo per Volkswagen Golf 7 GTD - Personalizza colori, cerchi e interni" />
+  <title>Volkswagen Golf 7 GTD - Visualizzatore 3D</title>
+
+  <!-- Google Font moderno - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stili del progetto -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Contenitore principale della scena 3D -->
+  <div id="viewer">
+    <!-- Il canvas WebGL verrà inserito qui automaticamente da Three.js -->
+    
+    <!-- Overlay con titolo e pannello controlli -->
+    <div id="overlay">
+      <!-- Header con titolo -->
+      <div id="header">
+        <h1>Volkswagen Golf 7 GTD</h1>
+        <p class="subtitle">Ruota con il mouse • Usa i controlli per personalizzare</p>
+      </div>
+
+      <!-- Pannello laterale con i controlli interattivi -->
+      <div id="controls">
+        <!-- Sezione: Colore carrozzeria -->
+        <section>
+          <h2>🎨 Colore carrozzeria</h2>
+          <div class="btn-row" id="color-buttons">
+            <button data-color="#b30000" title="Rosso" style="background: linear-gradient(135deg, #b30000, #8b0000);">
+              <span class="color-preview" style="background: #b30000;"></span>
+            </button>
+            <button data-color="#ffffff" title="Bianco" style="background: linear-gradient(135deg, #ffffff, #e8e8e8);">
+              <span class="color-preview" style="background: #ffffff; border: 1px solid rgba(0,0,0,0.1);"></span>
+            </button>
+            <button data-color="#0b0b0b" title="Nero" style="background: linear-gradient(135deg, #0b0b0b, #1a1a1a);">
+              <span class="color-preview" style="background: #0b0b0b;"></span>
+            </button>
+            <button data-color="#9b9b9b" title="Grigio" style="background: linear-gradient(135deg, #9b9b9b, #6b6b6b);">
+              <span class="color-preview" style="background: #9b9b9b;"></span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Sezione: Cerchi -->
+        <section>
+          <h2>⚙️ Cerchi</h2>
+          <div class="btn-row" id="rim-buttons">
+            <button data-rim="style1">Scuro</button>
+            <button data-rim="style2">Lucido</button>
+            <button data-rim="style3">Metallico</button>
+          </div>
+        </section>
+
+        <!-- Sezione: Portiere -->
+        <section>
+          <h2>🚪 Portiere</h2>
+          <div class="btn-row">
+            <button id="toggle-doors" class="full-width">Apri/Chiudi porte</button>
+          </div>
+        </section>
+
+        <!-- Sezione: Cofano -->
+        <section>
+          <h2>🔧 Cofano</h2>
+          <div class="btn-row">
+            <button id="toggle-hood" class="full-width">Apri/Chiudi cofano</button>
+          </div>
+        </section>
+
+        <!-- Sezione: Colori interni -->
+        <section>
+          <h2>🪑 Colori interni</h2>
+          <div class="btn-row" id="interior-buttons">
+            <button data-interior="black">Nero</button>
+            <button data-interior="light">Chiaro</button>
+            <button data-interior="beige">Beige</button>
+          </div>
+        </section>
+
+        <!-- Footer informativo -->
+        <section class="footer">
+          <small>Modello 3D: models/golf7.gltf</small>
+          <small>Powered by Three.js</small>
+        </section>
+      </div>
+    </div>
+
+    <!-- Indicatore di caricamento -->
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Caricamento modello 3D...</p>
+    </div>
+  </div>
+
+  <!-- Script principale (ES6 module) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

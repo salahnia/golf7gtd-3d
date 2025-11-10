@@ -1,0 +1,7 @@
+# Cartella per il modello 3D
+
+Posiziona qui il tuo file modello 3D della Volkswagen Golf 7 GTD.
+
+Il file deve essere nominato: `golf7.gltf` (o `golf7.glb`)
+
+Se usi un nome diverso, ricorda di modificare il path nel file `js/main.js` alla riga del loader.
